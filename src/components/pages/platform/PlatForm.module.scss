@@ -1,0 +1,64 @@
+.PlatForm {
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .text {
+      a {
+        color: rgb(246, 246, 248);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20.8px;
+        letter-spacing: 1px;
+        text-align: left;
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
+      p {
+        color: rgb(246, 246, 248);
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding: 14px 0;
+      }
+      button {
+        width: 160px;
+        height: 59px;
+        border-radius: 4px;
+        color: #000;
+        border: none;
+        background: rgb(87, 217, 166);
+      }
+      h1 {
+        padding: 30px 0 10px 0;
+        font-size: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .PlatForm {
+    .content {
+      display: flex;
+      img {
+        width: 314px;
+        height: 314px;
+      }
+      .text {
+        h1 {
+          font-size: 15px;
+        }
+        p {
+          display: none;
+        }
+        button {
+          width: 140px;
+          height: 39px;
+        }
+      }
+    }
+  }
+}

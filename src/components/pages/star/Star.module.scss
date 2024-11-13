@@ -1,0 +1,178 @@
+.Star {
+  background-color: #0d122b;
+  color: #ffffff;
+  padding: 2rem;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .quoteSection {
+    text-align: center;
+    background-color: #2ee6a5;
+    padding: 3rem;
+    height: 350px;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    color: #0d122b;
+
+    .starIcon {
+      width: 100%;
+      height: auto;
+      max-width: 1020px;
+      margin: 0 auto;
+    }
+
+    .quote {
+      font-size: 1.2rem;
+      font-style: italic;
+      max-width: 800px;
+      margin: 0 auto 1rem;
+      padding: 20px 0;
+    }
+
+    .author {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  .profileSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #0d122b;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: left;
+
+    .profileImage {
+      border-radius: 50%;
+      margin-right: 2rem;
+      margin-bottom: 1rem;
+      width: 150px;
+      height: 150px;
+      flex-shrink: 0;
+    }
+
+    .profileText {
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: #ffffff;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        color: #cccccc;
+      }
+
+      .aboutButton {
+        background-color: #2ee6a5;
+        color: #0d122b;
+        padding: 0.5rem 1.5rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #24c291;
+        }
+      }
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .Star {
+    padding: 1rem;
+
+    .quoteSection {
+      padding: 2rem;
+      height: auto;
+
+      .quote {
+        font-size: 1rem;
+        padding: 1rem;
+      }
+
+      .author {
+        font-size: 0.9rem;
+      }
+    }
+
+    .profileSection {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .profileImage {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        width: 120px;
+        height: 120px;
+      }
+
+      .profileText {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+          color: #cccccc;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .Star {
+    padding: 1rem;
+
+    .quoteSection {
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+
+      .quote {
+        font-size: 0.9rem;
+      }
+
+      .author {
+        font-size: 0.8rem;
+      }
+    }
+
+    .profileSection {
+      padding: 1rem;
+
+      .profileImage {
+        width: 100px;
+        height: 100px;
+      }
+
+      .profileText {
+        h2 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 0.8rem;
+        }
+
+        .aboutButton {
+          font-size: 0.9rem;
+          padding: 0.5rem 1rem;
+        }
+      }
+    }
+  }
+}
