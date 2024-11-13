@@ -4,7 +4,9 @@ import {
   fetchBaseQuery,
 } from "@reduxjs/toolkit/query/react";
 
-const baseQuery = fetchBaseQuery({ baseUrl: "http://13.49.243.58/api" });
+const baseQuery = fetchBaseQuery({
+  baseUrl: `${process.env.NEXT_PUBLIC_API}/api`,
+});
 
 const baseQueryExtended: BaseQueryFn = (args, api, extraOptions) =>
   baseQuery(args, api, extraOptions);
